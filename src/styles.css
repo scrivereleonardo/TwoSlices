@@ -1,1 +1,17 @@
 /* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.font-pirata{
+    font-family: 'Pirata One', cursive;
+}
+
+.bg-rimini{
+    background-image: url('../src/assets/panoramica-spiaggia3_Edit2.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+
+}
