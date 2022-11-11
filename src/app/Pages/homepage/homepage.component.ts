@@ -12,8 +12,14 @@ export class HomepageComponent implements OnInit {
 
   constructor() { }
 
+  loadedWait:boolean=false
   ngOnInit(): void {
+
     Aos.init()
+  
+    setTimeout(() => {
+      this.loadedWait=true
+    }, 500);
   }
 
 }
