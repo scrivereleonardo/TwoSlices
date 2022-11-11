@@ -8,12 +8,13 @@
 }
 
 .bg-rimini{
-    /* background-image: url('../src/assets/panoramica-spiaggia3_Edit1.png');
-    background-position: center;
+    
+    background-image:  linear-gradient(rgba(212, 241, 244,0.5), rgba(212, 241, 244,0.5)), url('../src/assets/bg-test.jpg');
+    background-position: 50% 100%;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-size: cover; */
-    @apply bg-quaternary
+    background-size: cover;
+    /* @apply bg-quaternary */
 }
 
 hr.style-seven {

@@ -1,0 +1,14 @@
+.headerDown{
+    @apply -translate-y-0;
+    animation-name: scrollDown;
+    animation-duration: linear 2s;
+  }
+
+@keyframes scrollDown {
+    0%{
+        @apply opacity-0 -translate-y-32;
+    }
+    100%{
+        @apply translate-y-0 opacity-100;
+    }
+}
