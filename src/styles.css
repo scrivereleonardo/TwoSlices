@@ -7,6 +7,35 @@
     font-family: 'Pirata One', cursive;
 }
 
+.delay1{
+    animation-delay: 250ms;
+    
+}
+
+.delay2{
+    animation-delay: 500ms;
+}
+
+.disappear{
+    animation-name: gone;
+    animation-duration: 3.5s;
+    opacity: 0;
+}
+
+
+@keyframes gone {
+    0%{
+        @apply opacity-100;
+    }
+    80%{
+        @apply opacity-100;
+    }
+    100%{
+        @apply opacity-0;
+    }
+}
+
+
 .bg-rimini{
     
     background-image:  linear-gradient(rgba(212, 241, 244,0.5), rgba(212, 241, 244,0.5)), url('../src/assets/bg-test.jpg');
