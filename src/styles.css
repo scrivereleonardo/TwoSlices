@@ -7,6 +7,11 @@
     font-family: 'Pirata One', cursive;
 }
 
+.font-corsivo{
+    font-family: 'Alegreya', serif;
+
+}
+
 .delay1{
     animation-delay: 250ms;
     
