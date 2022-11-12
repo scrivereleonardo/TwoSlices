@@ -10,15 +10,30 @@ import * as Aos from 'aos';
 })
 export class HomepageComponent implements OnInit {
 
-  constructor() { }
+  volumeoff=false
 
-  loadedWait:boolean=false
+  constructor() { }
+  audio: any = new Audio('../../../assets/overtaken_onepiece.m4a');
+
+  playAudio() {
+    this.audio.play();
+  }
+
+  stopAudio() {
+    this.audio.pause();
+  }
+
+  loadedWait: boolean = false
   ngOnInit(): void {
 
     Aos.init()
-  
+
+
+
+
+
     setTimeout(() => {
-      this.loadedWait=true
+      this.loadedWait = true
     }, 500);
   }
 

@@ -1,5 +1,7 @@
 <ng-container *ngIf="loadedWait">
-    <main class="text-black  font-pirata scroll-smooth opacity-100 overflow-x-hidden">
+    <!-- overflow-x-hidden -->
+    <main class="text-black  font-pirata scroll-smooth opacity-100 ">
+
         <app-header></app-header>
 
         <section
@@ -22,18 +24,10 @@
             <section class="grid sm:grid-cols-1 md:grid-cols-2">
                 <div class="m-4">
                     <div class="text-xl fadeInClass">
-                        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque semper mollis sagittis.
-                            Aenean
-                            ac
-                            ex
-                            est.
-
-                            risus, quis pellentesque ipsum. Sed enim lectus, euismod id tincidunt vitae, mollis a nisi.
+                        <p> Two Slices è il rinomato manga scritto da Saverio "Sbeb" Sintoni e disegnato da Giulio
+                            "Gimuz" Montalti, apprezzato dalla critica per la sua trama originale e atipica!
                         </p> <br>
-                        <p> Proin egestas, urna non maximus posuere, dui erat elementum nisl, a venenatis diam arcu non
-                            neque.
-                            Vestibulum ante ipsum primis in faucibus orci luctus et
-                            ultrices posuere cubilia curae; </p>
+                        <p> </p>
                         <div class="flex justify-center items-center">
                             <img class="h-28 mt-5" src="../../../assets/100-percent-original-stamp-3.png" alt="">
                         </div>
@@ -52,8 +46,9 @@
             </section>
             <br>
             <hr class="style-seven my-2">
-            <h3 data-aos="fade-right" data-aos-offset="120" data-aos-duration="1000" class="text-3xl text-right mb-4">
-                Qualcosa qualcosa?</h3>
+            <h3 data-aos="fade-right" data-aos-offset="120" data-aos-duration="1000"
+                class="hidden md:block text-3xl text-right mb-4">
+                La storia...</h3>
 
             <section class="grid sm:grid-cols-1 md:grid-cols-2 mb-4">
 
@@ -70,13 +65,22 @@
                     <img class="absolute -top-8 h-[110px] -right-0 hover:-translate-y-14 transition-all ease-out"
                         src="../../../assets/testa_femuz.png" alt="">
                 </div>
-                <div data-aos="fade-right" data-aos-offset="200" data-aos-duration="1000" class="text-xl">Curabitur
-                    pharetra
-                    ante viverra elit tempus sollicitudin. Donec
-                    imperdiet
-                    vestibulum neque, vel mollis justo convallis a. Aenean commodo suscipit enim, eget sagittis lorem
-                    ultricies vitae. Integer eros ipsum, viverra nec nunc eget, suscipit congue felis. Nulla aliquam
-                    tristique magna in eleifend. </div>
+                <div data-aos="fade-right" data-aos-offset="200" data-aos-duration="1000" class="text-xl">
+
+                    <h3 class="block md:hidden text-center text-3xl  mb-4">
+                        La storia...</h3>
+
+                    Pida, parsot e figa*. Il miglior pirata nella sua professione aveva ottenuto tutto questo.
+                    Le parole che proferì prima di sparire spinsero molti a salpare: "Il mio tesoro? Se lo troverete
+                    sarà vostro... Cercatelo! È a Rimini in un tombino dell'Enel!"
+                    Così i pirati di tutto il mondo partirono alla volta di Rimini e il mondo entrò nella Grande Era
+                    della Riviera Romagnola.
+
+                    La storia segue le avventure del giovane pirata Amarillo D. Prunella, che insieme alla sua ciurma,
+                    cerca il famoso tesoro Two Slices nella misteriosa Rimini.
+                    Riuscirà il nostro eroe a sopravvivere nella città più pericolosa della Romagna e a trovare le
+                    leggendarie "Due Fette"?
+                </div>
 
             </section>
 
@@ -117,6 +121,16 @@
             <br><br><br><br><br><br>
         </section>
 
+        <div class=" sticky bottom-0 ml-5 ">
+            <span *ngIf="volumeoff==false" (click)="volumeoff=true;  playAudio()"
+                class="font-bold text-primary material-icons hover:cursor-pointer">
+                volume_off
+            </span>
+            <span *ngIf="volumeoff==true" (click)="volumeoff=false; stopAudio()"
+                class="font-bold text-primary material-icons hover:cursor-pointer">
+                volume_up
+            </span>
+        </div>
     </main>
 
 </ng-container>
