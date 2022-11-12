@@ -18,7 +18,7 @@
 
 .disappear{
     animation-name: gone;
-    animation-duration: 3.5s;
+    animation-duration: 1.75s;
     opacity: 0;
 }
 
