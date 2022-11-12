@@ -5,3 +5,8 @@
     -webkit-mask: var(--mask);
             mask: var(--mask);
   }
+
+  .bg-image-character{
+    background-image: url('../../../assets/sfondo.png');
+    background-size: cover;
+  }
