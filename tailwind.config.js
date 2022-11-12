@@ -15,6 +15,9 @@ module.exports = {
         "tertiary":"#0E86D4",
         "quaternary":"#68BBE3"
 
+      },
+      screens:{
+        'md':'1000px'
       }
     },
   },
